@@ -6,5 +6,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
 body {
-    font-family: "Lato", sans-serif;
+   font-family: "Lato", sans-serif;
+}
+.slider {
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.slider-1 {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./images/banner1.png");
+}
+.slider-2 {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./images/banner2.png");
+}
+.slider-3 {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./images/banner3.png");
+}
+.slider-4 {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./images/banner4.png");
 }
