@@ -11,8 +11,45 @@
             type="image/x-icon" />
         <!-- Tailwind CSS -->
         <link rel="stylesheet" href="./dist/output.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./src/style.css" />
     </head>
     <body>
-        <h1 class="container md:container text-ru font-bold">Hello</h1>
+        <!-- Header -->
+        <header class="container md:container">
+            <!-- Desktop header -->
+            <div
+                class="navbar justify-between bg-main-color rounded-full px-6 mt-8">
+                <div>
+                    <ul class="flex gap-x-4 text-white">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="justify-center">
+                    <a href="#"><img src="./images/logo.png" alt="Logo" /></a>
+                </div>
+                <div class="input w-24 md:w-auto rounded-full">
+                    <input
+                        type="text"
+                        placeholder="Search here"
+                        class="py-3 px-2 focus:outline-none rounded-full" />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main class="container md:container"></main>
+
+        <!-- Footer -->
+        <footer class="container md:container"></footer>
+
+        <!-- Font Awesome kit -->
+        <script
+            src="https://kit.fontawesome.com/6908033352.js"
+            crossorigin="anonymous"></script>
     </body>
 </html>
