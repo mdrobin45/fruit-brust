@@ -4,15 +4,42 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Fruit Brust</title>
+
         <!-- Favicon -->
         <link
             rel="shortcut icon"
             href="./images/favicon.png"
             type="image/x-icon" />
-        <!-- Tailwind CSS -->
-        <link rel="stylesheet" href="./dist/output.css" />
+
+        <!-- Tailwind and Daisy UI -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+            rel="stylesheet"
+            type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./src/style.css" />
+
+        <!-- Tailwind Configuration -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    container: {
+                        padding: {
+                            DEFAULT: "1rem",
+                            md: "4rem",
+                        },
+                    },
+                    extend: {
+                        colors: {
+                            "main-color": "#F85559",
+                        },
+                    },
+                },
+            };
+        </script>
     </head>
     <body>
         <!-- Header -->
@@ -45,7 +72,19 @@
         <main class="container md:container">
             <!-- Slider -->
             <div class="carousel w-full">
+                <!-- Slider 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
+                    <!-- <div class="card w-96 bg-base-100 shadow-xl">
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>
+                                If a dog chews shoes whose shoes does he choose?
+                            </p>
+                            <div class="card-actions">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div> -->
                     <img src="./images/banner1.png" class="w-full" />
                     <div
                         class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
